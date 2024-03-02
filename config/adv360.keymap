@@ -21,9 +21,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp N0 &kp N0 &kp E &kp N5>,
-                <&macro_release>;
+                <&macro_press   &kp LALT>,
+                <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N9>,
+                <&macro_release &kp LALT>;
 
             label = "NEW_MACRO";
         };
