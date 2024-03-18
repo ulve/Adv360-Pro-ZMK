@@ -1,3 +1,9 @@
+macro_qwer: macro_qwer{
+compatible = "zmk,behavior-macro";
+label = "macro_qwer";
+#binding-cells = <0>;
+bindings = <&kp G>, <&kp C>;
+};
 macro_asdf: macro_asdf{
 compatible = "zmk,behavior-macro";
 label = "macro_asdf";
