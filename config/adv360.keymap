@@ -68,7 +68,7 @@
             >;
         };
 
-        layer_COLMAK {
+        layer_Colemak {
             bindings = <
       &kp EQUAL     &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                   &tog 3                                                                    &none  &kp N6  &kp N7     &kp N8      &kp N9         &kp N0        &kp MINUS
         &kp TAB      &kp Q   &kp W   &kp F   &kp P   &kp G                 &kp HOME                                                                &kp PG_UP   &kp J   &kp L      &kp U       &kp Y  &kp SEMICOLON    &kp BACKSLASH
@@ -78,13 +78,13 @@
             >;
         };
 
-        layer_Layer__4 {
+        layer_Swedish {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans   &none   &none
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &none
- &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans         &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &macro_swe_ao   &none
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans   &none
+ &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans  &trans  &trans  &trans         &trans  &trans
+ &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans         &trans  &trans
             >;
         };
 
