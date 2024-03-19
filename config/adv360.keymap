@@ -32,7 +32,7 @@
     };
 
     macros {
-        swedish_oo: swedish_ao {
+        swedish_oo: swedish_oo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
