@@ -40,6 +40,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        combo_esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <41 42>;
+        };
+
+        combo_tab {
+            bindings = <&kp TAB>;
+            key-positions = <32 31>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -47,7 +61,7 @@
             bindings = <
 &kp EQUAL       &kp N1     &kp N2  &kp N3  &kp N4        &kp N5  &kp LEFT_PARENTHESIS                                              &kp RIGHT_PARENTHESIS  &kp N6  &kp N7             &kp N8     &kp N9      &kp N0         &kp MINUS
 &kp TAB         &kp Q      &kp W   &kp E   &kp R         &kp T   &kp LEFT_BRACKET                                                  &kp RIGHT_BRACKET      &kp Y   &kp U              &kp I      &kp O       &kp P          &kp BACKSLASH
-&kp ESC         &kp A      &kp S   &kp D   &lt 1 F       &kp G   &kp LEFT_BRACE        &none    &to 1         &none     &none      &kp RIGHT_BRACE        &kp H   &kp J              &kp K      &kp L       &kp SEMICOLON  &kp SQT
+&kp ESC         &lt 1 A    &kp S   &kp D   &kp F         &kp G   &kp LEFT_BRACE        &none    &to 1         &none     &none      &kp RIGHT_BRACE        &kp H   &kp J              &kp K      &kp L       &kp SEMICOLON  &kp SQT
 &kp LEFT_SHIFT  &kp Z      &kp X   &kp C   &kp V         &kp B                                  &kp HOME      &kp END                                     &kp N   &kp M              &kp COMMA  &kp PERIOD  &kp SLASH      &kp RIGHT_SHIFT
 &mo 1           &kp GRAVE  &none   &paste  &kp LEFT_ALT          &kp BACKSPACE         &kp DEL  &kp LGUI      &kp RGUI  &kp ENTER  &kp SPACE                      &kp RIGHT_CONTROL  &none      &none       &none          &none
             >;
