@@ -32,46 +32,11 @@
     };
 
     macros {
-        swedish_oo: swedish_oo {
+        paste: paste {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp N0 &kp N2 &kp N4 &kp N6>,
-                <&macro_release>,
-                <&kp LEFT_ALT>;
-
-            label = "SWEDISH_AO";
-        };
-
-        swedish_ao: swedish_ao {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_tap>,
-                <&kp N0 &kp N2 &kp N2 &kp N9>,
-                <&macro_release>,
-                <&kp LEFT_ALT>;
-
-            label = "SWEDISH_AO";
-        };
-
-        swedish_aa: swedish_aa {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_tap>,
-                <&kp N0 &kp N2 &kp N2 &kp N8>,
-                <&macro_release>,
-                <&kp LEFT_ALT>;
-
-            label = "SWEDISH_AA";
+            bindings = <&kp V &kp I &kp W &kp P>;
+            label = "PASTE";
         };
     };
 
@@ -82,9 +47,9 @@
             bindings = <
 &kp EQUAL       &kp N1     &kp N2  &kp N3  &kp N4        &kp N5  &kp LEFT_PARENTHESIS                                              &kp RIGHT_PARENTHESIS  &kp N6  &kp N7             &kp N8     &kp N9      &kp N0         &kp MINUS
 &kp TAB         &kp Q      &kp W   &kp E   &kp R         &kp T   &kp LEFT_BRACKET                                                  &kp RIGHT_BRACKET      &kp Y   &kp U              &kp I      &kp O       &kp P          &kp BACKSLASH
-&kp ESC         &kp A      &kp S   &kp D   &kp F         &kp G   &kp LEFT_BRACE        &none    &to 1         &none     &none      &kp RIGHT_BRACE        &kp H   &kp J              &kp K      &kp L       &kp SEMICOLON  &kp SQT
+&kp ESC         &kp A      &kp S   &kp D   &lt 1 F       &kp G   &kp LEFT_BRACE        &none    &to 1         &none     &none      &kp RIGHT_BRACE        &kp H   &kp J              &kp K      &kp L       &kp SEMICOLON  &kp SQT
 &kp LEFT_SHIFT  &kp Z      &kp X   &kp C   &kp V         &kp B                                  &kp HOME      &kp END                                     &kp N   &kp M              &kp COMMA  &kp PERIOD  &kp SLASH      &kp RIGHT_SHIFT
-&mo 1           &kp GRAVE  &none   &none   &kp LEFT_ALT          &kp BACKSPACE         &kp DEL  &kp LGUI      &kp RGUI  &kp ENTER  &kp SPACE                      &kp RIGHT_CONTROL  &none      &none       &none          &none
+&mo 1           &kp GRAVE  &none   &paste  &kp LEFT_ALT          &kp BACKSPACE         &kp DEL  &kp LGUI      &kp RGUI  &kp ENTER  &kp SPACE                      &kp RIGHT_CONTROL  &none      &none       &none          &none
             >;
         };
 
