@@ -149,20 +149,20 @@
 
         symbol {
             bindings = <
-&trans     &trans     &trans  &trans     &trans          &trans            &trans                                      &trans  &trans             &trans           &trans         &trans                &trans                 &trans
-&kp GRAVE  &kp EXCL   &kp AT  &kp HASH   &kp DOLLAR      &kp PERCENT       &trans                                      &trans  &kp CARET          &kp AMPS         &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans     &kp TILDE  &trans  &kp SLASH  &kp LEFT_BRACE  &kp LEFT_BRACKET  &trans  &trans  &trans      &trans  &trans  &trans  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp BACKSLASH  &kp MINUS             &kp PLUS               &kp PIPE
-&trans     &trans     &trans  &trans     &trans          &trans                            &trans      &trans                  &trans             &trans           &trans         &kp UNDER             &kp EQUAL              &trans
-&trans     &trans     &trans  &trans     &trans                            &trans  &trans  &trans      &trans  &trans  &trans                     &trans           &trans         &trans                &trans                 &trans
+&trans     &trans     &trans  &trans     &trans          &trans            &trans                                      &trans  &trans             &trans            &trans         &trans                &trans                 &trans
+&kp GRAVE  &kp EXCL   &kp AT  &kp HASH   &kp DOLLAR      &kp PERCENT       &trans                                      &trans  &kp CARET          &kp AMPS          &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans     &kp TILDE  &trans  &kp SLASH  &kp LEFT_BRACE  &kp LEFT_BRACKET  &trans  &trans  &trans      &trans  &trans  &trans  &kp RIGHT_BRACKET  &kp RIGHT_BRACE   &kp BACKSLASH  &kp MINUS             &kp PLUS               &kp PIPE
+&trans     &trans     &trans  &trans     &kp LESS_THAN   &trans                            &trans      &trans                  &trans             &kp GREATER_THAN  &trans         &kp UNDER             &kp EQUAL              &trans
+&trans     &trans     &trans  &trans     &trans                            &trans  &trans  &trans      &trans  &trans  &trans                     &trans            &trans         &trans                &trans                 &trans
             >;
         };
 
         nav {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans          &trans          &trans        &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans          &trans          &trans        &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &to 5       &to 4   &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans          &trans          &trans        &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp HOME        &kp END         &trans        &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &kp PAGE_DOWN   &kp PAGE_UP     &trans        &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                  &trans          &trans        &trans     &trans  &trans
             >;
         };
