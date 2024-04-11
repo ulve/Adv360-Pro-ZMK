@@ -166,5 +166,35 @@
 &none  &none         &none         &none         &none                       &none        &none  &none      &none  &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
             >;
         };
+
+        framtid {
+            bindings = <
+&none  &none       &none           &none             &none        &none  &none                                                &none      &none  &none        &none              &none            &none                    &none
+&none  &kp Q       &kp W           &kp E             &kp R        &kp T  &none                                                &none      &kp Y  &kp U        &kp I              &kp O            &kp P                    &none
+&none  &hm LGUI A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LCTRL F  &kp G  &none      &none    &none      &none  &none          &none      &kp H  &hm RCTRL J  &hm RIGHT_SHIFT K  &hm RIGHT_ALT L  &hm RIGHT_GUI SEMICOLON  &none
+&none  &kp Z       &kp X           &kp C             &kp V        &kp B                      &none      &none                            &kp N  &kp M        &kp COMMA          &kp DOT          &kp SLASH                &none
+&none  &none       &none           &none             &none               &kp ENTER  &kp DEL  &none      &none  &kp BACKSPACE  &kp SPACE         &none        &none              &none            &none                    &none
+            >;
+        };
+
+        num {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans           &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &trans                                      &trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0           &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp N4  &kp N5  &kp N6  &kp KP_PLUS      &kp KP_EQUAL
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &kp N1  &kp N2  &kp N3  &kp KP_SUBTRACT  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans           &trans
+            >;
+        };
+
+        symbol {
+            bindings = <
+&trans     &trans     &trans  &trans     &trans          &trans            &trans                                      &trans  &trans             &trans           &trans         &trans                &trans                 &trans
+&kp GRAVE  &kp EXCL   &kp AT  &kp HASH   &kp DOLLAR      &kp PERCENT       &trans                                      &trans  &kp CARET          &kp AMPS         &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans     &kp TILDE  &trans  &kp SLASH  &kp LEFT_BRACE  &kp LEFT_BRACKET  &trans  &trans  &trans      &trans  &trans  &trans  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp BACKSLASH  &kp MINUS             &kp PLUS               &kp PIPE
+&trans     &trans     &trans  &trans     &trans          &trans                            &trans      &trans                  &trans             &trans           &trans         &kp UNDER             &kp EQUAL              &trans
+&trans     &trans     &trans  &trans     &trans                            &trans  &trans  &trans      &trans  &trans  &trans                     &trans           &trans         &trans                &trans                 &trans
+            >;
+        };
     };
 };
