@@ -68,12 +68,14 @@
 
         framtid {
             bindings = <
-&none  &none       &none           &none             &none        &none  &none                                      &none      &none  &none        &none              &none            &none                    &none
-&none  &kp Q       &kp W           &kp E             &kp R        &kp T  &none                                      &none      &kp Y  &kp U        &kp I              &kp O            &kp P                    &none
-&mo 3  &hm LGUI A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LCTRL F  &kp G  &none      &none  &none      &none  &none  &none      &kp H  &hm RCTRL J  &hm RIGHT_SHIFT K  &hm RIGHT_ALT L  &hm RIGHT_GUI SEMICOLON  &none
-&none  &kp Z       &kp X           &kp C             &kp V        &kp B                    &none      &none                    &kp N  &kp M        &kp COMMA          &kp DOT          &kp SLASH                &none
-&none  &none       &none           &none             &paste              &kp ENTER  &mo 2  &mo 1      &mo 1  &mo 2  &kp SPACE         &none        &none              &none            &none                    &none
+&none  &none       &none           &none             &none        &none  &none                                      &none      &none  &none        &none              &none            &none                    &kp DEL
+&none  &kp Q       &kp W           &kp E             &kp R        &kp T  &none                                      &none      &kp Y  &kp U        &kp I              &kp O            &kp P                    &kp DEL
+&mo 3  &hm LGUI A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LCTRL F  &kp G  &none      &none  &none      &none  &none  &none      &kp H  &hm RCTRL J  &hm RIGHT_SHIFT K  &hm RIGHT_ALT L  &hm RIGHT_GUI SEMICOLON  &kp BACKSPACE
+&none  &kp Z       &kp X           &kp C             &kp V        &kp B                    &none      &none                    &kp N  &kp M        &kp COMMA          &kp DOT          &kp SLASH                &kp BSPC
+&none  &none       &none           &none             &paste              &kp ENTER  &mo 2  &mo 1      &mo 1  &mo 2  &kp SPACE         &none        &none              &none            &none                    &kp BSPC
             >;
+
+            label = "test";
         };
 
         num {
