@@ -88,11 +88,11 @@
 
         symbol {
             bindings = <
-&trans     &trans     &trans  &trans     &trans          &trans            &trans                                      &trans  &trans             &trans            &trans         &trans                &trans                 &trans
-&kp GRAVE  &kp EXCL   &kp AT  &kp HASH   &kp DOLLAR      &kp PERCENT       &trans                                      &trans  &kp CARET          &kp AMPS          &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans     &kp TILDE  &trans  &kp SLASH  &kp LEFT_BRACE  &kp LEFT_BRACKET  &trans  &trans  &trans      &trans  &trans  &trans  &kp RIGHT_BRACKET  &kp RIGHT_BRACE   &kp BACKSLASH  &kp MINUS             &kp PLUS               &kp PIPE
-&trans     &trans     &trans  &trans     &kp LESS_THAN   &trans                            &trans      &trans                  &trans             &kp GREATER_THAN  &trans         &kp UNDER             &kp EQUAL              &trans
-&trans     &trans     &trans  &trans     &trans                            &trans  &trans  &trans      &trans  &trans  &trans                     &trans            &trans         &trans                &trans                 &trans
+&trans     &trans     &trans    &trans     &trans                &trans            &trans                                      &trans  &trans             &trans                 &trans         &trans     &trans     &trans
+&kp GRAVE  &trans     &kp AT    &kp HASH   &kp DOLLAR            &kp PERCENT       &trans                                      &trans  &kp CARET          &kp AMPS               &kp ASTRK      &trans     &trans     &trans
+&trans     &kp TILDE  &kp EXCL  &kp SLASH  &kp LEFT_BRACE        &kp LEFT_BRACKET  &trans  &trans  &trans      &trans  &trans  &trans  &kp RIGHT_BRACKET  &kp RIGHT_BRACE        &kp BACKSLASH  &kp MINUS  &kp PLUS   &kp PIPE
+&trans     &trans     &trans    &trans     &kp LEFT_PARENTHESIS  &kp LESS_THAN                     &trans      &trans                  &kp GREATER_THAN   &kp RIGHT_PARENTHESIS  &trans         &kp UNDER  &kp EQUAL  &trans
+&trans     &trans     &trans    &trans     &trans                                  &trans  &trans  &trans      &trans  &trans  &trans                     &trans                 &trans         &trans     &trans     &trans
             >;
         };
 
