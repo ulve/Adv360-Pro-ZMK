@@ -80,11 +80,11 @@
 
         num {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans           &trans
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &trans                                      &trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0           &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp N4  &kp N5  &kp N6  &kp KP_PLUS      &kp KP_EQUAL
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &kp N1  &kp N2  &kp N3  &kp KP_SUBTRACT  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans                         &trans                       &trans                     &trans                &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &trans                                      &trans  &kp N6  &kp N7                         &kp N8                       &kp N9                     &kp N0                &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &hm RIGHT_CONTROL KP_NUMBER_4  &hm RIGHT_SHIFT KP_NUMBER_5  &hm RIGHT_ALT KP_NUMBER_6  &hm LEFT_GUI KP_PLUS  &kp KP_EQUAL
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &kp N1                         &kp N2                       &kp N3                     &kp KP_SUBTRACT       &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans                         &trans                       &trans                     &trans                &trans
             >;
         };
 
