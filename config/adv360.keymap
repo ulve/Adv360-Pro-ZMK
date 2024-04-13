@@ -61,6 +61,11 @@
             bindings = <&kp TAB>;
             key-positions = <32 31>;
         };
+
+        combo_nav {
+            bindings = <&mo 3>;
+            key-positions = <66 69>;
+        };
     };
 
     keymap {
@@ -91,7 +96,7 @@
         symbol {
             bindings = <
 &trans  &trans        &trans                     &trans                     &trans                             &trans            &trans                                      &trans  &trans         &trans                   &trans                 &trans               &trans                  &trans
-&trans  &kp LS(EXCL)  &kp LS(DQT)                &kp LS(POUND)              &kp DOLLAR                         &kp LS(PRCNT)     &trans                                      &trans  &kp LS(AMPS)   &kp TILDE                &kp GRAVE              &kp SINGLE_QUOTE     &trans                  &trans
+&trans  &kp LS(EXCL)  &kp LS(DQT)                &kp LS(POUND)              &kp DOLLAR                         &kp LS(PRCNT)     &trans                                      &trans  &kp LS(AMPS)   &kp TILDE                &kp GRAVE              &kp SINGLE_QUOTE     &kp ASTRK               &trans
 &trans  &trans        &hm LEFT_ALT LEFT_BRACKET  &hm LEFT_SHIFT LEFT_BRACE  &hm LEFT_CONTROL LEFT_PARENTHESIS  &kp LESS_THAN     &trans  &trans  &trans      &trans  &trans  &trans  &kp SLASH      &hm RIGHT_CONTROL MINUS  &hm RIGHT_SHIFT EQUAL  &hm RIGHT_ALT COLON  &hm RIGHT_GUI QUESTION  &trans
 &trans  &trans        &kp RIGHT_BRACKET          &kp RIGHT_BRACE            &kp RIGHT_PARENTHESIS              &kp GREATER_THAN                  &trans      &trans                  &kp BACKSLASH  &kp UNDERSCORE           &kp PLUS               &kp SEMICOLON        &kp PIPE                &trans
 &trans  &trans        &trans                     &trans                     &trans                                               &trans  &trans  &trans      &trans  &trans  &trans                 &trans                   &trans                 &trans               &trans                  &trans
