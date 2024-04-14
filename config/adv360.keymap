@@ -133,12 +133,12 @@
             >;
         };
 
-        layer_6 {
+        colemak-dh {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &tog 6                                      &trans  &trans  &trans  &trans     &trans   &trans   &trans
 &trans  &kp Q   &kp W   &kp F   &kp P   &kp B   &trans                                      &trans  &kp J   &kp L   &kp U      &kp Y    &trans   &trans
 &trans  &kp A   &kp R   &kp S   &kp T   &kp G   &trans  &trans  &trans      &trans  &trans  &trans  &kp K   &kp N   &kp E      &kp I    &kp O    &trans
-&trans  &kp Z   &kp X   &kp C   &kp F   &kp V                   &trans      &trans                  &kp M   &kp H   &kp COMMA  &kp DOT  &kp RET  &trans
+&trans  &kp Z   &kp X   &kp C   &kp D   &kp V                   &trans      &trans                  &kp M   &kp H   &kp COMMA  &kp DOT  &kp RET  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans     &trans   &trans   &trans
             >;
         };
