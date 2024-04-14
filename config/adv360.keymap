@@ -63,7 +63,7 @@
         };
 
         combo_nav {
-            bindings = <&mo 3>;
+            bindings = <&mo 4>;
             key-positions = <66 69>;
         };
     };
@@ -71,16 +71,26 @@
     keymap {
         compatible = "zmk,keymap";
 
-        framtid {
+        qwerty {
             bindings = <
-&none  &none       &none           &none             &none        &none  &tog 6                                                                      &none      &none  &none        &none              &none            &none              &none
+&none  &none       &none           &none             &none        &none  &tog 1                                                                      &none      &none  &none        &none              &none            &none              &none
 &none  &kp Q       &kp W           &kp E             &kp R        &kp T  &none                                                                       &none      &kp Y  &kp U        &kp I              &kp O            &kp P              &none
-&none  &hm LGUI A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LCTRL F  &kp G  &none          &holdtap 2 2  &holdtap 1 1      &holdtap 1 1   &holdtap 2 2  &none      &kp H  &hm RCTRL J  &hm RIGHT_SHIFT K  &hm RIGHT_ALT L  &hm RIGHT_GUI RET  &none
+&none  &hm LGUI A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LCTRL F  &kp G  &none          &holdtap 3 3  &holdtap 2 2      &holdtap 2 2   &holdtap 3 3  &none      &kp H  &hm RCTRL J  &hm RIGHT_SHIFT K  &hm RIGHT_ALT L  &hm RIGHT_GUI RET  &none
 &none  &kp Z       &kp X           &kp C             &kp V        &kp B                               &kp LEFT_GUI      &kp RIGHT_GUI                           &kp N  &kp M        &kp COMMA          &kp DOT          &none              &none
-&none  &none       &none           &none             &paste              &kp BACKSPACE  &mo 2         &mo 1             &mo 1          &mo 2         &kp SPACE         &none        &none              &none            &none              &none
+&none  &none       &none           &none             &paste              &kp BACKSPACE  &mo 3         &mo 2             &mo 2          &mo 3         &kp SPACE         &none        &none              &none            &none              &none
             >;
 
             label = "test";
+        };
+
+        colemak-dh {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &tog 1                                      &trans  &trans  &trans  &trans     &trans   &trans   &trans
+&trans  &kp Q   &kp W   &kp F   &kp P   &kp B   &trans                                      &trans  &kp J   &kp L   &kp U      &kp Y    &trans   &trans
+&trans  &kp A   &kp R   &kp S   &kp T   &kp G   &trans  &trans  &trans      &trans  &trans  &trans  &kp K   &kp N   &kp E      &kp I    &kp O    &trans
+&trans  &kp Z   &kp X   &kp C   &kp D   &kp V                   &trans      &trans                  &kp M   &kp H   &kp COMMA  &kp DOT  &kp RET  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans     &trans   &trans   &trans
+            >;
         };
 
         num {
@@ -117,7 +127,7 @@
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &trans                                      &trans  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &to 5       &to 4   &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &to 6       &to 5   &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
             >;
@@ -127,19 +137,9 @@
             bindings = <
 &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                             &trans                  &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none         &none         &bootloader                                       &bootloader             &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &none        &none  &none      &to 5  &bt BT_CLR  &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none         &none        &none  &none      &to 6  &bt BT_CLR  &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &macro_ver    &none                             &none      &none                                      &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none                       &none        &none  &none      &none  &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
-            >;
-        };
-
-        colemak-dh {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &tog 6                                      &trans  &trans  &trans  &trans     &trans   &trans   &trans
-&trans  &kp Q   &kp W   &kp F   &kp P   &kp B   &trans                                      &trans  &kp J   &kp L   &kp U      &kp Y    &trans   &trans
-&trans  &kp A   &kp R   &kp S   &kp T   &kp G   &trans  &trans  &trans      &trans  &trans  &trans  &kp K   &kp N   &kp E      &kp I    &kp O    &trans
-&trans  &kp Z   &kp X   &kp C   &kp D   &kp V                   &trans      &trans                  &kp M   &kp H   &kp COMMA  &kp DOT  &kp RET  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans     &trans   &trans   &trans
             >;
         };
     };
