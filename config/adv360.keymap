@@ -87,8 +87,8 @@
             bindings = <
 &trans  &trans          &trans          &trans            &trans       &trans  &tog 1                                      &trans  &trans  &trans       &trans             &trans           &trans           &trans
 &trans  &kp Q           &kp W           &kp F             &kp P        &kp B   &trans                                      &trans  &kp J   &kp L        &kp U              &kp Y            &trans           &trans
-&mo 0   &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LEFT_SHIFT S  &hm LCTRL T  &kp G   &trans  &trans  &trans      &trans  &trans  &trans  &kp K   &hm RCTRL N  &hm RIGHT_SHIFT E  &hm RIGHT_ALT I  &hm RIGHT_GUI O  &trans
-&trans  &kp Z           &kp X           &kp C             &kp D        &kp V                   &trans      &trans                  &kp M   &kp H        &kp COMMA          &kp DOT          &kp RET          &trans
+&mo 0   &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LEFT_SHIFT S  &hm LCTRL T  &kp G   &trans  &trans  &trans      &trans  &trans  &trans  &kp M   &hm RCTRL N  &hm RIGHT_SHIFT E  &hm RIGHT_ALT I  &hm RIGHT_GUI O  &trans
+&trans  &kp Z           &kp X           &kp C             &kp D        &kp V                   &trans      &trans                  &kp K   &kp H        &kp COMMA          &kp DOT          &kp RET          &trans
 &trans  &trans          &trans          &trans            &trans               &trans  &trans  &trans      &trans  &trans  &trans          &trans       &trans             &trans           &trans           &trans
             >;
         };
