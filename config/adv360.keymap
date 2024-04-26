@@ -106,11 +106,11 @@
 
         colemak-dh {
             bindings = <
-&trans  &trans          &trans          &trans            &trans       &trans  &tog 1                                      &trans  &trans  &trans       &trans             &trans           &trans           &trans
-&trans  &kp Q           &kp W           &kp F             &kp P        &kp B   &trans                                      &trans  &kp J   &kp L        &kp U              &kp Y            &ao              &aa
-&mo 0   &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LEFT_SHIFT S  &hm LCTRL T  &kp G   &trans  &trans  &trans      &trans  &trans  &trans  &kp M   &hm RCTRL N  &hm RIGHT_SHIFT E  &hm RIGHT_ALT I  &hm RIGHT_GUI O  &oo
-&trans  &kp Z           &kp X           &kp C             &kp D        &kp V                   &trans      &trans                  &kp K   &kp H        &kp COMMA          &kp DOT          &kp SLASH        &trans
-&trans  &trans          &trans          &trans            &trans               &trans  &trans  &trans      &trans  &trans  &trans          &trans       &trans             &trans           &trans           &trans
+&kp EQUAL  &kp N1          &kp N2          &kp N3            &kp N4       &kp N5  &tog 1                                      &trans  &kp N6  &kp N7       &kp N8             &kp N9           &kp N0           &kp MINUS
+&kp TAB    &kp Q           &kp W           &kp F             &kp P        &kp B   &trans                                      &trans  &kp J   &kp L        &kp U              &kp Y            &ao              &aa
+&mo 0      &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LEFT_SHIFT S  &hm LCTRL T  &kp G   &trans  &trans  &trans      &trans  &trans  &trans  &kp M   &hm RCTRL N  &hm RIGHT_SHIFT E  &hm RIGHT_ALT I  &hm RIGHT_GUI O  &oo
+&kp LSHFT  &kp Z           &kp X           &kp C             &kp D        &kp V                   &trans      &trans                  &kp K   &kp H        &kp COMMA          &kp DOT          &kp SLASH        &kp RSHFT
+&trans     &kp GRAVE       &trans          &trans            &trans               &trans  &trans  &trans      &trans  &trans  &trans          &trans       &trans             &kp LBKT         &kp RBKT         &trans
             >;
         };
 
