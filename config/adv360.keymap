@@ -126,11 +126,11 @@
 
         symbol {
             bindings = <
-&trans         &trans                     &trans               &trans                     &trans                   &trans                &trans                                      &trans  &trans            &trans                   &trans                 &trans                          &trans                        &trans
-&trans         &kp LS(NUMBER_1)           &kp LS(NUMBER_2)     &kp LS(NUMBER_3)           &kp RA(NUMBER_4)         &kp LS(N5)            &trans                                      &trans  &kp LS(NUMBER_6)  &kp LS(N7)               &kp LS(N8)             &kp LS(N9)                      &kp RA(RIGHT_BRACKET)         &trans
-&trans         &hm LEFT_GUI LS(NUMBER_2)  &hm LEFT_ALT RA(N8)  &hm LEFT_SHIFT RA(RS(N8))  &hm LEFT_CONTROL RS(N8)  &kp GRAVE             &trans  &trans  &trans      &trans  &trans  &trans  &kp LS(N7)        &hm RIGHT_CONTROL SLASH  &hm RIGHT_SHIFT EQUAL  &hm RIGHT_ALT RS(GREATER_THAN)  &hm RIGHT_GUI RS(UNDERSCORE)  &trans
-&kp RS(EQUAL)  &kp LS(NON_US_BACKSLASH)   &kp RA(N8)           &kp RA(RS(N9))             &kp RS(N9)               &kp LS(GREATER_THAN)                  &trans      &trans                  &kp RA(RS(N7))    &kp RS(SLASH)            &kp PLUS               &kp LESS_THAN                   &kp RA(RS(N7))                &trans
-&trans         &trans                     &trans               &trans                     &trans                                         &trans  &trans  &trans      &trans  &trans  &trans                    &trans                   &trans                 &trans                          &trans                        &trans
+&trans         &trans                     &trans               &trans                     &trans                   &trans                &trans                                      &trans  &trans            &trans                   &trans                     &trans                          &trans                        &trans
+&trans         &kp LS(NUMBER_1)           &kp LS(NUMBER_2)     &kp LS(NUMBER_3)           &kp RA(NUMBER_4)         &kp LS(N5)            &trans                                      &trans  &kp LS(NUMBER_6)  &kp LS(N7)               &kp LS(N8)                 &kp LS(N9)                      &kp RA(RIGHT_BRACKET)         &trans
+&trans         &hm LEFT_GUI LS(NUMBER_2)  &hm LEFT_ALT RA(N8)  &hm LEFT_SHIFT RA(RS(N8))  &hm LEFT_CONTROL RS(N8)  &kp GRAVE             &trans  &trans  &trans      &trans  &trans  &trans  &kp LS(N7)        &hm RIGHT_CONTROL SLASH  &hm RIGHT_SHIFT LS(EQUAL)  &hm RIGHT_ALT RS(GREATER_THAN)  &hm RIGHT_GUI RS(UNDERSCORE)  &trans
+&kp RS(EQUAL)  &kp NON_US_BACKSLASH       &kp RA(N8)           &kp RA(RS(N9))             &kp RS(N9)               &kp LS(GREATER_THAN)                  &trans      &trans                  &kp RA(RS(N7))    &kp RS(SLASH)            &kp PLUS                   &kp LESS_THAN                   &kp RA(N7)                    &kp PIPE
+&trans         &trans                     &trans               &trans                     &trans                                         &trans  &trans  &trans      &trans  &trans  &trans                    &trans                   &trans                     &trans                          &trans                        &trans
             >;
         };
 
