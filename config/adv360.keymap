@@ -129,7 +129,7 @@
 &trans         &trans                     &trans               &trans                     &trans                   &trans      &trans                                      &trans  &trans            &trans                   &trans                  &trans                          &trans                        &trans
 &trans         &kp LS(NUMBER_1)           &kp LS(NUMBER_2)     &kp LS(NUMBER_3)           &kp RA(NUMBER_4)         &kp LS(N5)  &trans                                      &trans  &kp LS(NUMBER_6)  &kp LS(N7)               &kp LS(N8)              &kp LS(N9)                      &kp RA(RIGHT_BRACKET)         &trans
 &trans         &hm LEFT_GUI LS(NUMBER_2)  &hm LEFT_ALT RA(N8)  &hm LEFT_SHIFT RA(RS(N8))  &hm LEFT_CONTROL RS(N8)  &kp GRAVE   &trans  &trans  &trans      &trans  &trans  &trans  &kp LS(N7)        &hm RIGHT_CONTROL SLASH  &hm RIGHT_SHIFT LS(N0)  &hm RIGHT_ALT RS(GREATER_THAN)  &hm RIGHT_GUI RS(UNDERSCORE)  &trans
-&kp RS(EQUAL)  &kp BACKSLASH              &kp RA(N8)           &kp RA(RS(N9))             &kp RS(N9)               &kp TILDE                   &trans      &trans                  &kp RA(RS(N7))    &kp RS(SLASH)            &kp MINUS               &kp LESS_THAN                   &kp RA(N7)                    &kp PIPE
+&kp RS(EQUAL)  &kp BACKSLASH              &kp RA(N9)           &kp RA(RS(N9))             &kp RS(N9)               &kp TILDE                   &trans      &trans                  &kp RA(RS(N7))    &kp RS(SLASH)            &kp MINUS               &kp LESS_THAN                   &kp RA(N7)                    &kp PIPE
 &trans         &trans                     &trans               &trans                     &trans                               &trans  &trans  &trans      &trans  &trans  &trans                    &trans                   &trans                  &trans                          &trans                        &trans
             >;
         };
@@ -146,11 +146,11 @@
 
         layer_fn {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &trans                                      &trans  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &to 6       &to 5   &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
+&none      &none              &none              &none            &none                  &none             &none                                  &none  &none                 &none           &none                 &none                  &none         &none
+&none      &kp EXCLAMATION    &kp DOUBLE_QUOTES  &kp HASH         &kp DOLLAR             &kp PERCENT       &none                                  &none  &kp AMPERSAND         &kp SLASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE     &none
+&none      &kp DOUBLE_QUOTES  &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp LESS_THAN     &none  &none  &to 6      &to 5  &none  &none  &kp SLASH             &kp MINUS       &kp EQUAL             &kp COLON              &kp QUESTION  &none
+&kp GRAVE  &kp SQT            &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN                &none      &none                &kp NON_US_BACKSLASH  &kp UNDERSCORE  &kp PLUS              &kp SEMICOLON          &kp PIPE      &kp ASTERISK
+&none      &none              &none              &none            &none                                    &none  &none  &none      &none  &none  &none                        &none           &none                 &none                  &none         &none
             >;
         };
 
