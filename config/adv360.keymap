@@ -106,11 +106,11 @@
 
         colemak-dh {
             bindings = <
-&kp EQUAL  &kp N1          &kp N2          &kp N3            &kp N4       &kp N5  &tog 1                                      &trans  &kp N6  &kp N7       &kp N8             &kp N9           &kp N0                   &kp MINUS
-&kp TAB    &kp Q           &kp W           &kp F             &kp P        &kp B   &trans                                      &trans  &kp J   &kp L        &kp U              &kp Y            &kp LEFT_BRACKET         &none
-&mo 0      &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LEFT_SHIFT S  &hm LCTRL T  &kp G   &trans  &trans  &trans      &trans  &trans  &trans  &kp M   &hm RCTRL N  &hm RIGHT_SHIFT E  &hm RIGHT_ALT I  &hm RIGHT_GUI SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z           &kp X           &kp C             &kp D        &kp V                   &trans      &trans                  &kp K   &kp H        &kp COMMA          &kp DOT          &kp SLASH                &kp RSHFT
-&trans     &kp GRAVE       &trans          &trans            &trans               &trans  &trans  &trans      &trans  &trans  &trans          &trans       &trans             &kp LBKT         &kp RBKT                 &trans
+&kp EQUAL  &kp N1          &kp N2          &kp N3            &kp N4       &kp N5  &tog 1                                      &trans  &kp N6  &kp N7       &kp N8             &kp N9           &kp N0            &kp MINUS
+&kp TAB    &kp Q           &kp W           &kp F             &kp P        &kp B   &trans                                      &trans  &kp J   &kp L        &kp U              &kp Y            &kp LEFT_BRACKET  &kp SQT
+&mo 0      &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LEFT_SHIFT S  &hm LCTRL T  &kp G   &trans  &trans  &trans      &trans  &trans  &trans  &kp M   &hm RCTRL N  &hm RIGHT_SHIFT E  &hm RIGHT_ALT I  &hm RIGHT_GUI O   &kp SEMICOLON
+&kp LSHFT  &kp Z           &kp X           &kp C             &kp D        &kp V                   &trans      &trans                  &kp K   &kp H        &kp COMMA          &kp DOT          &kp SLASH         &kp RSHFT
+&trans     &kp GRAVE       &trans          &trans            &trans               &trans  &trans  &trans      &trans  &trans  &trans          &trans       &trans             &kp LBKT         &kp RBKT          &trans
             >;
         };
 
@@ -161,6 +161,16 @@
 &none  &none         &none         &none         &none         &none         &none        &none  &none      &to 6  &bt BT_CLR  &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &macro_ver    &none                             &none      &none                                      &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none                       &none        &none  &none      &none  &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&kp EQUAL  &kp N1     &kp N2  &kp N3  &kp N4  &kp N5  &tog 1                                      &trans  &kp N6  &kp N7  &kp N8     &kp N9    &kp N0            &kp MINUS
+&kp TAB    &kp Q      &kp W   &kp F   &kp P   &kp B   &trans                                      &trans  &kp J   &kp L   &kp U      &kp Y     &kp LEFT_BRACKET  &kp SQT
+&mo 0      &kp A      &kp R   &kp S   &kp T   &kp G   &trans  &trans  &trans      &trans  &trans  &trans  &kp M   &kp N   &kp E      &kp I     &kp O             &kp SEMICOLON
+&kp LSHFT  &kp Z      &kp X   &kp C   &kp D   &kp V                   &trans      &trans                  &kp K   &kp H   &kp COMMA  &kp DOT   &kp SLASH         &kp RSHFT
+&trans     &kp GRAVE  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans     &kp LBKT  &kp RBKT          &trans
             >;
         };
     };
