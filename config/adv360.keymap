@@ -126,11 +126,11 @@
 
         symbol {
             bindings = <
-&trans  &trans            &trans               &trans                     &trans                   &trans            &trans                                      &trans  &trans            &trans                   &trans                 &trans               &trans                  &trans
-&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)     &kp LS(NUMBER_3)           &kp LS(NUMBER_4)         &kp LS(N5)        &trans                                      &trans  &kp LS(NUMBER_6)  &kp LS(N7)               &kp LS(N8)             &kp LS(N9)           &kp LS(N0)              &trans
-&trans  &kp LS(NUMBER_2)  &hm LEFT_ALT RA(N8)  &hm LEFT_SHIFT RA(RS(N8))  &hm LEFT_CONTROL RS(N8)  &kp LESS_THAN     &trans  &trans  &trans      &trans  &trans  &trans  &kp SLASH         &hm RIGHT_CONTROL MINUS  &hm RIGHT_SHIFT EQUAL  &hm RIGHT_ALT COLON  &hm RIGHT_GUI QUESTION  &trans
-&trans  &kp SQT           &kp RA(N8)           &kp RA(RS(N9))             &kp RS(N9)               &kp GREATER_THAN                  &trans      &trans                  &kp BACKSLASH     &kp UNDERSCORE           &kp PLUS               &kp SEMICOLON        &kp PIPE                &trans
-&trans  &trans            &trans               &trans                     &trans                                     &trans  &trans  &trans      &trans  &trans  &trans                    &trans                   &trans                 &trans               &trans                  &trans
+&trans  &trans            &trans               &trans                     &trans                   &trans            &trans                                      &trans  &trans                 &trans                               &trans                  &trans                          &trans                        &trans
+&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)     &kp LS(NUMBER_3)           &kp LS(NUMBER_4)         &kp LS(N5)        &trans                                      &trans  &kp LS(NUMBER_6)       &kp LS(N7)                           &kp LS(N8)              &kp LS(N9)                      &kp LS(N0)                    &trans
+&trans  &kp LS(NUMBER_2)  &hm LEFT_ALT RA(N8)  &hm LEFT_SHIFT RA(RS(N8))  &hm LEFT_CONTROL RS(N8)  &kp LESS_THAN     &trans  &trans  &trans      &trans  &trans  &trans  &kp LS(N7)             &hm RIGHT_CONTROL LS(RIGHT_BRACKET)  &hm RIGHT_SHIFT LS(N0)  &hm RIGHT_ALT RS(GREATER_THAN)  &hm RIGHT_GUI RS(UNDERSCORE)  &trans
+&trans  &kp SQT           &kp RA(N8)           &kp RA(RS(N9))             &kp RS(N9)               &kp GREATER_THAN                  &trans      &trans                  &kp RA(RS(BACKSLASH))  &kp RS(QUESTION)                     &kp PLUS                &kp SEMICOLON                   &kp PIPE                      &trans
+&trans  &trans            &trans               &trans                     &trans                                     &trans  &trans  &trans      &trans  &trans  &trans                         &trans                               &trans                  &trans                          &trans                        &trans
             >;
         };
 
