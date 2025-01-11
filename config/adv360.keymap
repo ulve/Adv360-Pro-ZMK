@@ -40,36 +40,6 @@
         };
     };
 
-    macros {
-        paste: paste {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp V &kp I &kp W &kp P>;
-            label = "PASTE";
-        };
-
-        ao: ao {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(A)>;
-            label = "AO";
-        };
-
-        aa: aa {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(U) &kp A>;
-            label = "AA";
-        };
-
-        oo: oo {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(U) &kp O>;
-            label = "OO";
-        };
-    };
-
     combos {
         compatible = "zmk,combos";
 
@@ -98,7 +68,7 @@
 &kp TAB    &kp Q       &kp W           &kp E             &kp R        &kp T   &none                                                                                       &none      &kp Y   &kp U        &kp I              &kp O            &kp P          &kp LEFT_BRACKET
 &none      &hm LGUI A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LCTRL F  &kp G   &none          &kp LG(LA(LEFT))  &kp LG(LA(H))      &kp LG(LA(L))  &kp LG(LA(RIGHT_ARROW))  &none      &kp H   &hm RCTRL J  &hm RIGHT_SHIFT K  &hm RIGHT_ALT L  &kp SEMICOLON  &kp SINGLE_QUOTE
 &kp LSHFT  &kp Z       &kp X           &kp C             &kp V        &kp B                                    &kp LEFT_GUI       &kp RIGHT_GUI                                      &kp N   &kp M        &kp COMMA          &kp DOT          &kp RS(FSLH)   &kp LSHFT
-&none      &kp GRAVE   &none           &none             &paste               &kp BACKSPACE  &mo 3             &mo 2              &mo 2          &kp RET                  &kp SPACE          &none        &none              &kp RA(LBKT)     &kp RA(RBKT)   &none
+&none      &kp GRAVE   &none           &none             &none                &kp BACKSPACE  &mo 3             &mo 2              &mo 2          &kp RET                  &kp SPACE          &none        &none              &kp RA(LBKT)     &kp RA(RBKT)   &none
             >;
 
             label = "test";
@@ -108,7 +78,7 @@
             bindings = <
 &kp EQUAL  &kp N1          &kp N2          &kp N3            &kp N4       &kp N5  &tog 1                                      &trans  &kp N6  &kp N7       &kp N8             &kp N9           &kp N0            &kp MINUS
 &kp TAB    &kp Q           &kp W           &kp F             &kp P        &kp B   &trans                                      &trans  &kp J   &kp L        &kp U              &kp Y            &kp LEFT_BRACKET  &kp SQT
-&mo 0      &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LEFT_SHIFT S  &hm LCTRL T  &kp G   &trans  &trans  &trans      &trans  &trans  &trans  &kp M   &hm RCTRL N  &hm RIGHT_SHIFT E  &hm RIGHT_ALT I  &hm RIGHT_GUI O   &kp SEMICOLON
+&mo 5      &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LEFT_SHIFT S  &hm LCTRL T  &kp G   &trans  &trans  &trans      &trans  &trans  &trans  &kp M   &hm RCTRL N  &hm RIGHT_SHIFT E  &hm RIGHT_ALT I  &hm RIGHT_GUI O   &kp SEMICOLON
 &kp LSHFT  &kp Z           &kp X           &kp C             &kp D        &kp V                   &trans      &trans                  &kp K   &kp H        &kp COMMA          &kp DOT          &kp SLASH         &kp RSHFT
 &trans     &kp GRAVE       &trans          &trans            &trans               &trans  &trans  &trans      &trans  &trans  &trans          &trans       &trans             &kp LBKT         &kp RBKT          &trans
             >;
@@ -116,11 +86,11 @@
 
         num {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans                         &trans                       &trans                     &trans                &trans
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &trans                                      &trans  &kp N6  &kp N7                         &kp N8                       &kp N9                     &kp N0                &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &hm RIGHT_CONTROL KP_NUMBER_4  &hm RIGHT_SHIFT KP_NUMBER_5  &hm RIGHT_ALT KP_NUMBER_6  &hm LEFT_GUI KP_PLUS  &kp KP_EQUAL
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &kp N1                         &kp N2                       &kp N3                     &kp KP_SUBTRACT       &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans                         &trans                       &trans                     &trans                &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans                &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &trans                                      &trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0                &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp N4  &kp N5  &kp N6  &hm LEFT_GUI KP_PLUS  &kp KP_EQUAL
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &kp N1  &kp N2  &kp N3  &kp KP_SUBTRACT       &kp PIPE
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans                &trans
             >;
         };
 
@@ -129,7 +99,7 @@
 &trans         &trans                     &trans               &trans                 &trans                   &trans               &trans                                      &trans  &trans            &trans                   &trans                  &trans                          &trans                        &trans
 &trans         &kp LS(NUMBER_1)           &kp LS(NUMBER_2)     &kp LS(NUMBER_3)       &kp RA(NUMBER_4)         &kp LS(N5)           &trans                                      &trans  &kp LS(NUMBER_6)  &kp LS(N7)               &kp LS(N8)              &kp LS(N9)                      &kp RA(RIGHT_BRACKET)         &trans
 &trans         &hm LEFT_GUI LS(NUMBER_2)  &hm LEFT_ALT RA(N8)  &hm LEFT_SHIFT RA(N7)  &hm LEFT_CONTROL RS(N8)  &kp NON_US_BSLH      &trans  &trans  &trans      &trans  &trans  &trans  &kp LS(N7)        &hm RIGHT_CONTROL SLASH  &hm RIGHT_SHIFT LS(N0)  &hm RIGHT_ALT RS(GREATER_THAN)  &hm RIGHT_GUI RS(UNDERSCORE)  &trans
-&kp RS(EQUAL)  &kp BACKSLASH              &kp RA(N9)           &kp RA(NUMBER_0)       &kp RS(N9)               &kp LS(NON_US_BSLH)                  &trans      &trans                  &kp RA(RS(N7))    &kp RS(SLASH)            &kp MINUS               &kp LESS_THAN                   &kp RA(NON_US_BSLH)           &kp PIPE
+&kp RS(EQUAL)  &kp BACKSLASH              &kp RA(N9)           &kp RA(NUMBER_0)       &kp RS(N9)               &kp LS(NON_US_BSLH)                  &trans      &trans                  &kp RA(MINUS)     &kp RS(SLASH)            &kp MINUS               &kp LESS_THAN                   &kp RA(NON_US_BSLH)           &kp PIPE
 &trans         &trans                     &trans               &trans                 &trans                                        &trans  &trans  &trans      &trans  &trans  &trans                    &trans                   &trans                  &trans                          &trans                        &trans
             >;
         };
@@ -144,13 +114,13 @@
             >;
         };
 
-        layer_fn {
+        vim {
             bindings = <
-&none      &none              &none              &none            &none                  &none             &none                                  &none  &none          &none           &none                 &none                  &none         &none
-&none      &kp EXCLAMATION    &kp DOUBLE_QUOTES  &kp HASH         &kp DOLLAR             &kp PERCENT       &none                                  &none  &kp AMPERSAND  &kp SLASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE     &none
-&none      &kp DOUBLE_QUOTES  &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp LESS_THAN     &none  &none  &to 6      &to 5  &none  &none  &kp SLASH      &kp MINUS       &kp EQUAL             &kp COLON              &kp QUESTION  &none
-&kp GRAVE  &kp SQT            &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN                &none      &none                &kp RA(MINUS)  &kp UNDERSCORE  &kp PLUS              &kp SEMICOLON          &kp PIPE      &kp ASTERISK
-&none      &none              &none              &none            &none                                    &none  &none  &none      &none  &none  &none                 &none           &none                 &none                  &none         &none
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp H   &kp J   &kp K   &kp L   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -158,9 +128,19 @@
             bindings = <
 &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                             &trans                  &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none         &none         &bootloader                                       &bootloader             &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &none        &none  &none      &to 6  &bt BT_CLR  &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none         &none        &none  &none      &to 7  &bt BT_CLR  &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &macro_ver    &none                             &none      &none                                      &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none                       &none        &none  &none      &none  &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
+            >;
+        };
+
+        layer_fn {
+            bindings = <
+&none      &none              &none              &none            &none                  &none             &none                                  &none  &none          &none           &none                 &none                  &none         &none
+&none      &kp EXCLAMATION    &kp DOUBLE_QUOTES  &kp HASH         &kp DOLLAR             &kp PERCENT       &none                                  &none  &kp AMPERSAND  &kp SLASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE     &none
+&none      &kp DOUBLE_QUOTES  &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp LESS_THAN     &none  &none  &to 7      &to 8  &none  &none  &kp SLASH      &kp MINUS       &kp EQUAL             &kp COLON              &kp QUESTION  &none
+&kp GRAVE  &kp SQT            &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN                &none      &none                &kp RA(MINUS)  &kp UNDERSCORE  &kp PLUS              &kp SEMICOLON          &kp PIPE      &kp ASTERISK
+&none      &none              &none              &none            &none                                    &none  &none  &none      &none  &none  &none                 &none           &none                 &none                  &none         &none
             >;
         };
     };
