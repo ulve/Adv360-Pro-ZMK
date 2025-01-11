@@ -146,11 +146,11 @@
 
         layer_fn {
             bindings = <
-&none      &none              &none              &none            &none                  &none             &none                                  &none  &none                 &none           &none                 &none                  &none         &none
-&none      &kp EXCLAMATION    &kp DOUBLE_QUOTES  &kp HASH         &kp DOLLAR             &kp PERCENT       &none                                  &none  &kp AMPERSAND         &kp SLASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE     &none
-&none      &kp DOUBLE_QUOTES  &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp LESS_THAN     &none  &none  &to 6      &to 5  &none  &none  &kp SLASH             &kp MINUS       &kp EQUAL             &kp COLON              &kp QUESTION  &none
-&kp GRAVE  &kp SQT            &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN                &none      &none                &kp NON_US_BACKSLASH  &kp UNDERSCORE  &kp PLUS              &kp SEMICOLON          &kp PIPE      &kp ASTERISK
-&none      &none              &none              &none            &none                                    &none  &none  &none      &none  &none  &none                        &none           &none                 &none                  &none         &none
+&none      &none              &none              &none            &none                  &none             &none                                  &none  &none          &none           &none                 &none                  &none         &none
+&none      &kp EXCLAMATION    &kp DOUBLE_QUOTES  &kp HASH         &kp DOLLAR             &kp PERCENT       &none                                  &none  &kp AMPERSAND  &kp SLASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE     &none
+&none      &kp DOUBLE_QUOTES  &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp LESS_THAN     &none  &none  &to 6      &to 5  &none  &none  &kp SLASH      &kp MINUS       &kp EQUAL             &kp COLON              &kp QUESTION  &none
+&kp GRAVE  &kp SQT            &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN                &none      &none                &kp RA(MINUS)  &kp UNDERSCORE  &kp PLUS              &kp SEMICOLON          &kp PIPE      &kp ASTERISK
+&none      &none              &none              &none            &none                                    &none  &none  &none      &none  &none  &none                 &none           &none                 &none                  &none         &none
             >;
         };
 
